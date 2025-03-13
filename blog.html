@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover</title>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+  <!-- DaisyUI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind CDN -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'primary-color' : '#3752FD',
+            'txt-color' : '#00303C',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .poppins-thin {
+  font-family: "Poppins", sans-serif;
+  
+}
+  </style>
+</head>
+
+<body class="bg-primary-color/[0.07] poppins-thin">
+  <header class="max-w-screen-xl mx-auto py-5 ">
+    <nav class="flex justify-between items-center bg-white p-5 rounded-2xl ">
+      <div class="flex items-center gap-2">
+        <img src="./assets/logo.png" alt="">
+        <h2 class="text-3xl text-txt-color">Dev<span class="font-bold">Board</span></h2>
+      </div>
+      <div class="flex gap-7 items-center">
+        <button id="back-to-desk" class="bg-primary-color btn p-3 text-white font-medium" >Back to Desk</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="max-w-screen-xl mx-auto py-5 ">
+    <h1 class="text-3xl text-center font-bold text-txt-color">Blogs</h1>
+    <!-- Blog questions -->
+
+    <div class="bg-white my-5 rounded-lg">
+      <h1 class="text-xl font-bold p-5 text-txt-color">Question-1: What are the different ways to select an element in the DOM? </h1>
+      <hr>
+      <p class="p-5 text-txt-color/[0.7] text-lg">There are multiple ways to select elements in DOM. For example, we can access elements by getElementByID(“id”), getElementsByClass(“class”), getElementsByTagName(“tag”), querySelectorAll("selector") etc.
+      </p>
+    </div>
+
+    <div class="bg-white my-5 rounded-lg">
+      <h1 class="text-xl font-bold p-5 text-txt-color">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+      <hr>
+      <p class="p-5 text-txt-color/[0.7] text-lg">innerHTML lets us change the content in an element. For example, we can change texts in bold format or give some other html commands. Otherside, innerText gives access to the texts inside an element. It will let you change or add or remove text inside an element. innerText only accesses the visible text but textContent selects all the text even if it’s hidden.
+      </p>
+    </div>
+
+    <div class="bg-white my-5 rounded-lg">
+      <h1 class="text-xl font-bold p-5 text-txt-color">Question-3: What is event delegation in the DOM?</h1>
+      <hr>
+      <p class="p-5 text-txt-color/[0.7] text-lg">Event delegation means adding an event listener to a parent element instead of each child element. When a child is clicked, the event moves up to the parent, which handles it.
+      </p>
+    </div>
+
+    <div class="bg-white my-5 rounded-lg">
+      <h1 class="text-xl font-bold p-5 text-txt-color">Question-4: What is event bubbling in the DOM?</h1>
+      <hr>
+      <p class="p-5 text-txt-color/[0.7] text-lg">Event bubbling happens when an event starts on the element is clicked and then moves up to its parent elements. For example, if we click a button inside a "div", the button handles the event first, then the "div", and then the page.</p>
+    </div>
+
+    <div class="bg-white my-5 rounded-lg">
+      <h1 class="text-xl font-bold p-5 text-txt-color">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+      <hr>
+      <p class="p-5 text-txt-color/[0.7] text-lg">In JavaScript, we can create an element using document.createElement("tagName") then add it using appendChild("createdElement"), and remove it using remove() or removeChild().</p>
+    </div>
+
+  </main>
+
+  <script src="./scripts/desk.js"></script>
+</body>
+</html>
