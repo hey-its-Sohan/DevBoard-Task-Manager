@@ -21,7 +21,7 @@ for( let cards of cardsCointainer){
 
     const p = document.createElement("p");
     const head = (event.target.parentNode.parentNode.querySelector("h2").innerText);
-    p.innerText = `You have Complete The Task ${head} at` +' '+time();
+    p.innerText = `You have Completed The Task ${head} at` +' '+time();
     p.classList.add("mb-4","bg-primary-color/[0.07]","p-3","rounded-lg")
     alert('Task Completed Successfully');
     activity.append(p);
